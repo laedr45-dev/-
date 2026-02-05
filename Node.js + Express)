@@ -1,0 +1,14 @@
+// فقط كمثال توضيحي
+app.get("/auth/discord/callback", async (req, res) => {
+  const code = req.query.code;
+  // استبدال بـ خطوات الحصول على access_token من Discord
+  const userData = await getUserFromDiscord(code);
+
+  // تحقق من الرتب
+  if(userData.roles.includes("ROLE_ID_SUPPORT")) {
+    // أعطه الوصول للصفحة
+    res.redirect("/support.html");
+  } else {
+    res.send("❌ ليس لديك صلاحية مراجعة الطلبات");
+  }
+});
