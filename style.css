@@ -1,41 +1,37 @@
 body {
-  background: #0b0b0b;
-  font-family: Tahoma;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background:#0b0b0b;
+  color:white;
+  font-family:Tahoma;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
 }
 
 .box {
-  background: #111;
-  padding: 30px;
-  width: 320px;
-  border-radius: 15px;
-  text-align: center;
+  background:#111;
+  padding:30px;
+  width:350px;
+  border-radius:15px;
+  text-align:center;
 }
 
 input, textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  background: #222;
-  border: none;
-  color: white;
-  border-radius: 8px;
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  background:#222;
+  border:none;
+  color:white;
+  border-radius:8px;
 }
 
 button {
-  width: 100%;
-  padding: 12px;
-  background: gold;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#msg {
-  margin-top: 10px;
-  color: lightgreen;
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+  background:gold;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
 }
